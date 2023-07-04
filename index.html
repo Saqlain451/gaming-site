@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Gaming site with html, css and js" />
+    <!--* font awsome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Gaming site test</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="(442px<=width<=900px)" href="tablet.css" />
+    <link rel="stylesheet" media="(width<=441px)" href="mobile.css" />
+  </head>
+  <body>
+    <!-- todo Navbar part of gaming site  -->
+    <header class="header">
+      <div class="navbar-logo">
+        <a href="">
+          <!-- <img src="" alt="logo" /> -->
+          <h1>Sgaming</h1>
+        </a>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li>
+            <a href="#hero" class="navbar-link"
+              ><i class="fa-solid fa-house"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="#browse" class="navbar-link"
+              ><i class="fa-solid fa-globe"></i>browse</a
+            >
+          </li>
+          <li>
+            <a href="#featured" class="navbar-link"
+              ><i class="fa-solid fa-bolt"></i>featured</a
+            >
+          </li>
+          <li>
+            <a href="#stream" class="navbar-link"
+              ><i class="fa-brands fa-steam"></i>steams</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="navbar-icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-sharp fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <!-- * end of navbar part * -->
+    <!-- todo --------Hero section---------- -->
+    <div class="dark-container">
+      <section id="hero">
+        <div class="container">
+          <div class="hero-contnet">
+            <p class="sub-title">Welcome to sGaming platform</p>
+            <h1 class="hero-title">
+              <span>Browse</span> our <br />
+              popular games here
+            </h1>
+            <button class="btn-browse">Browse now</button>
+          </div>
+        </div>
+      </section>
+      <!-- * --------Hero section end---------- -->
+      <!-- todo -------------Browse games part ----------- -->
+      <section id="browse">
+        <div class="browse-content">
+          <h1 class="title"><span>most popular</span> right now</h1>
+          <div class="card-parent">
+            <div class="card">
+              <img src="./Images/popular-01.jpg" alt="" />
+              <div class="card-body">
+                <div class="card-body-text-1">
+                  <h2>Fortnite</h2>
+                  <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <p>4.8</p>
+                  </div>
+                </div>
+                <div class="card-body-text-2">
+                  <h2>Sandbox</h2>
+                  <div class="download">
+                    <i class="fa-solid fa-download"></i>
+                    <p>2.3M</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./Images/popular-02.jpg" alt="" />
+              <div class="card-body">
+                <div class="card-body-text-1">
+                  <h2>Pubg</h2>
+                  <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <p>4.8</p>
+                  </div>
+                </div>
+                <div class="card-body-text-2">
+                  <h2>Battle s</h2>
+                  <div class="download">
+                    <i class="fa-solid fa-download"></i>
+                    <p>2.3M</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./Images/popular-03.jpg" alt="" />
+              <div class="card-body">
+                <div class="card-body-text-1">
+                  <h2>Dota-2</h2>
+                  <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <p>4.8</p>
+                  </div>
+                </div>
+                <div class="card-body-text-2">
+                  <h2>Steam-X</h2>
+                  <div class="download">
+                    <i class="fa-solid fa-download"></i>
+                    <p>2.3M</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./Images/popular-04.jpg" alt="" />
+              <div class="card-body">
+                <div class="card-body-text-1">
+                  <h2>CS-GO</h2>
+                  <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <p>4.8</p>
+                  </div>
+                </div>
+                <div class="card-body-text-2">
+                  <h2>Legendary</h2>
+                  <div class="download">
+                    <i class="fa-solid fa-download"></i>
+                    <p>2.3M</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./Images/popular-05.jpg" alt="" />
+              <div class="card-body">
+                <div class="card-body-text-1">
+                  <h2>Mini Craft</h2>
+                  <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <p>4.8</p>
+                  </div>
+                </div>
+                <div class="card-body-text-2">
+                  <h2>Legendary</h2>
+                  <div class="download">
+                    <i class="fa-solid fa-download"></i>
+                    <p>2.3M</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./Images/popular-06.jpg" alt="" />
+              <div class="card-body">
+                <div class="card-body-text-1">
+                  <h2>Eagles Fly</h2>
+                  <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <p>4.8</p>
+                  </div>
+                </div>
+                <div class="card-body-text-2">
+                  <h2>Matrix Games</h2>
+                  <div class="download">
+                    <i class="fa-solid fa-download"></i>
+                    <p>2.3M</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./Images/popular-07.jpg" alt="" />
+              <div class="card-body">
+                <div class="card-body-text-1">
+                  <h2>Warface</h2>
+                  <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <p>4.8</p>
+                  </div>
+                </div>
+                <div class="card-body-text-2">
+                  <h2>Max 3D</h2>
+                  <div class="download">
+                    <i class="fa-solid fa-download"></i>
+                    <p>2.3M</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./Images//popular-08.jpg" alt="" />
+              <div class="card-body">
+                <div class="card-body-text-1">
+                  <h2>Warcraft</h2>
+                  <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <p>4.8</p>
+                  </div>
+                </div>
+                <div class="card-body-text-2">
+                  <h2>Legend</h2>
+                  <div class="download">
+                    <i class="fa-solid fa-download"></i>
+                    <p>2.3M</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn-browse">discover popular</button>
+      </section>
+      <!-- * ------------- end Browse games part --------- -->
+      <section id="featured">
+        <div class="featured-content">
+          <h1 class="title"><span>Featured</span> Games</h1>
+          <div class="wrapper">
+            <div class="slider">
+              <div class="card-parent">
+                <div class="card">
+                  <img src="./Images/featured-01.jpg" alt="" />
+                  <div class="card-body">
+                    <div class="card-body-text-1">
+                      <h2>CS-Go</h2>
+                      <div class="rating">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <p>4.8</p>
+                      </div>
+                    </div>
+                    <div class="card-body-text-2">
+                      <h2>Sandbox</h2>
+                      <div class="download">
+                        <i class="fa-solid fa-download"></i>
+                        <p>2.3M</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./Images//featured-02.jpg" alt="" />
+                  <div class="card-body">
+                    <div class="card-body-text-1">
+                      <h2>Island Rusty</h2>
+                      <div class="rating">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <p>4.8</p>
+                      </div>
+                    </div>
+                    <div class="card-body-text-2">
+                      <h2>Sandbox</h2>
+                      <div class="download">
+                        <i class="fa-solid fa-download"></i>
+                        <p>2.3M</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./Images/featured-03.jpg" alt="" />
+                  <div class="card-body">
+                    <div class="card-body-text-1">
+                      <h2>Gamezer</h2>
+                      <div class="rating">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <p>4.8</p>
+                      </div>
+                    </div>
+                    <div class="card-body-text-2">
+                      <h2>Sandbox</h2>
+                      <div class="download">
+                        <i class="fa-solid fa-download"></i>
+                        <p>2.3M</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider">
+              <div class="card-parent">
+                <div class="card">
+                  <img src="./Images/featured-02.jpg" alt="" />
+                  <div class="card-body">
+                    <div class="card-body-text-1">
+                      <h2>CS-Go</h2>
+                      <div class="rating">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <p>4.8</p>
+                      </div>
+                    </div>
+                    <div class="card-body-text-2">
+                      <h2>Sandbox</h2>
+                      <div class="download">
+                        <i class="fa-solid fa-download"></i>
+                        <p>2.3M</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./Images//featured-01.jpg" alt="" />
+                  <div class="card-body">
+                    <div class="card-body-text-1">
+                      <h2>Island Rusty</h2>
+                      <div class="rating">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <p>4.8</p>
+                      </div>
+                    </div>
+                    <div class="card-body-text-2">
+                      <h2>Sandbox</h2>
+                      <div class="download">
+                        <i class="fa-solid fa-download"></i>
+                        <p>2.3M</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./Images/featured-03.jpg" alt="" />
+                  <div class="card-body">
+                    <div class="card-body-text-1">
+                      <h2>Gamezer</h2>
+                      <div class="rating">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <p>4.8</p>
+                      </div>
+                    </div>
+                    <div class="card-body-text-2">
+                      <h2>Sandbox</h2>
+                      <div class="download">
+                        <i class="fa-solid fa-download"></i>
+                        <p>2.3M</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider">
+              <div class="card-parent">
+                <div class="card">
+                  <img src="./Images/featured-03.jpg" alt="" />
+                  <div class="card-body">
+                    <div class="card-body-text-1">
+                      <h2>CS-Go</h2>
+                      <div class="rating">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <p>4.8</p>
+                      </div>
+                    </div>
+                    <div class="card-body-text-2">
+                      <h2>Sandbox</h2>
+                      <div class="download">
+                        <i class="fa-solid fa-download"></i>
+                        <p>2.3M</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./Images//featured-02.jpg" alt="" />
+                  <div class="card-body">
+                    <div class="card-body-text-1">
+                      <h2>Island Rusty</h2>
+                      <div class="rating">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <p>4.8</p>
+                      </div>
+                    </div>
+                    <div class="card-body-text-2">
+                      <h2>Sandbox</h2>
+                      <div class="download">
+                        <i class="fa-solid fa-download"></i>
+                        <p>2.3M</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./Images/featured-01.jpg" alt="" />
+                  <div class="card-body">
+                    <div class="card-body-text-1">
+                      <h2>Gamezer</h2>
+                      <div class="rating">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <p>4.8</p>
+                      </div>
+                    </div>
+                    <div class="card-body-text-2">
+                      <h2>Sandbox</h2>
+                      <div class="download">
+                        <i class="fa-solid fa-download"></i>
+                        <p>2.3M</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- todo ----------------stream ------------------- -->
+      <section id="stream">
+        <h1 class="title"><span>How to start </span>Live Stream</h1>
+        <div class="card-parent">
+          <div class="card">
+            <i class="fa-solid fa-user"></i>
+            <p class="card-subtitle">go to your profile</p>
+            <p class="card-content">
+              Cyborg Gaming is free HTML CSS website template provided by
+              TemplateMo. This is Bootstrap v5.2.0 layout.
+            </p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-gamepad"></i>
+            <p class="card-subtitle">Live Stream Button</p>
+            <p class="card-content">
+              If you wish to support us, you can make a small contribution via
+              PayPal to info [at] templatemo.com
+            </p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-video"></i>
+            <p class="card-subtitle">You Are Live</p>
+            <p class="card-content">
+              You are not allowed to redistribute this template's downloadable
+              ZIP file on any other template collection website.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="popular_streams">
+        <h1 class="title"><span>Most Popular</span> Live Stream</h1>
+        <div class="card-parent">
+          <div class="card">
+            <img src="./Images/stream-05.jpg" alt="" />
+            <div class="card-body">
+              <div class="card-body-text-1">
+                <h2>Kengan Omeg</h2>
+                <div class="rating">
+                  <i class="fa-solid fa-eye"></i>
+                  <p>1.2K</p>
+                </div>
+              </div>
+              <div class="card-body-text-2">
+                <h2>Just Talking with fans</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./Images/stream-06.jpg" alt="" />
+            <div class="card-body">
+              <div class="card-body-text-1">
+                <h2>LahutaMalc</h2>
+                <div class="rating">
+                  <i class="fa-solid fa-eye"></i>
+                  <p>1.2K</p>
+                </div>
+              </div>
+              <div class="card-body-text-2">
+                <h2>CS-GO 36 Hours Live Stream</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./Images/stream-07.jpg" alt="" />
+            <div class="card-body">
+              <div class="card-body-text-1">
+                <h2>Areluwa</h2>
+                <div class="rating">
+                  <i class="fa-solid fa-eye"></i>
+                  <p>1.2K</p>
+                </div>
+              </div>
+              <div class="card-body-text-2">
+                <h2>Maybe Nathej Allnight Chillin</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./Images/stream-08.jpg" alt="" />
+            <div class="card-body">
+              <div class="card-body-text-1">
+                <h2>NewGang Team</h2>
+                <div class="rating">
+                  <i class="fa-solid fa-eye"></i>
+                  <p>1.2K</p>
+                </div>
+              </div>
+              <div class="card-body-text-2">
+                <h2>Live Streaming Till Morning</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./Images/stream-07.jpg" alt="" />
+            <div class="card-body">
+              <div class="card-body-text-1">
+                <h2>Dynamo Gaming</h2>
+                <div class="rating">
+                  <i class="fa-solid fa-eye"></i>
+                  <p>1.2K</p>
+                </div>
+              </div>
+              <div class="card-body-text-2">
+                <h2>playing pubg mobile Live</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./Images/stream-08.jpg" alt="" />
+            <div class="card-body">
+              <div class="card-body-text-1">
+                <h2>Live Insaan</h2>
+                <div class="rating">
+                  <i class="fa-solid fa-eye"></i>
+                  <p>1.2K</p>
+                </div>
+              </div>
+              <div class="card-body-text-2">
+                <h2>Just Talking with fans</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./Images/stream-05.jpg" alt="" />
+            <div class="card-body">
+              <div class="card-body-text-1">
+                <h2>Kanika Gaming</h2>
+                <div class="rating">
+                  <i class="fa-solid fa-eye"></i>
+                  <p>1.2K</p>
+                </div>
+              </div>
+              <div class="card-body-text-2">
+                <h2>Giving Video Reaction</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./Images/stream-06.jpg" alt="" />
+            <div class="card-body">
+              <div class="card-body-text-1">
+                <h2>Payel Gaming</h2>
+                <div class="rating">
+                  <i class="fa-solid fa-eye"></i>
+                  <p>1.2K</p>
+                </div>
+              </div>
+              <div class="card-body-text-2">
+                <h2>Playing mincraft and Talking with fans</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn-browse">load more stremas</button>
+      </section>
+      <!-- * ----------------end stram ---------------------->
+    </div>
+    <footer>
+      Copyright © <span id="year"></span> Design by Saqlain. All rights reserved.
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

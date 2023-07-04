@@ -1,0 +1,360 @@
+/*  importing the font poppins from google font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --color-pink: #ec6090;
+  --color-white: #ffffff;
+  --color-dark: #27292a;
+  --color-black: #1f2122;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+.header {
+  height: 8rem;
+  background-color: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 5rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header .navbar-logo a {
+  color: var(--color-pink);
+}
+
+.header .navbar-list {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.navbar-list .navbar-link {
+  color: #666666;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+.navbar-link i {
+  display: none;
+}
+
+.navbar-link:hover {
+  font-size: 1.7rem;
+}
+
+.navbar-link:focus {
+  color: var(--color-pink);
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.8rem;
+}
+
+.navbar-icons i {
+  width: 4rem;
+  height: 4rem;
+  transition: 0.4s all linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-pink);
+}
+
+.navbar-icons i:hover {
+  border-radius: 50%;
+  background-color: var(--color-pink);
+  cursor: pointer;
+  color: antiquewhite;
+}
+
+i:last-child {
+  display: none;
+}
+
+/* hero part */
+.dark-container {
+  background-color: var(--color-dark);
+  margin: 2% 6%;
+  border-radius: 2rem;
+  padding: 6rem;
+}
+
+#hero {
+  background-image: url(./Images/banner-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  border-radius: 2rem;
+}
+
+.hero-contnet {
+  padding: 8rem 6rem;
+}
+
+.hero-contnet .hero-title {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  line-height: 6rem;
+  margin: 2rem 0rem;
+}
+.hero-contnet .hero-title span {
+  color: var(--color-pink);
+}
+.hero-contnet .sub-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.btn-browse {
+  width: 15rem;
+  height: 4.5rem;
+  border-radius: 2.5rem;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  border: none;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+/* * end of hero part */
+
+/* todo ---- start browse part -------- */
+#browse {
+  background-color: var(--color-black);
+  border-radius: 2rem;
+}
+
+.browse-content {
+  padding: 3rem;
+  margin-top: 5rem;
+}
+
+.card-parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.card-parent .card {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-dark);
+  border-radius: 1rem;
+  padding-bottom: 2rem;
+}
+
+.card img {
+  margin: 2rem auto;
+  display: block;
+  width: 85%;
+  aspect-ratio: 195/150;
+  border-radius: 1rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  color: var(--color-pink);
+  margin-bottom: 2rem;
+}
+.title span {
+  color: var(--color-white);
+  border-bottom: 2px solid var(--color-white);
+}
+.card-body {
+  padding: 0rem 2rem;
+}
+
+.card-body-text-1,
+.card-body-text-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rating,
+.download {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.4rem;
+}
+
+.card-body-text-2 {
+  margin: 1rem 0rem;
+}
+
+.card-body-text-2 h2 {
+  color: #666666;
+}
+
+.rating i {
+  color: yellow;
+}
+
+.download i {
+  color: var(--color-pink);
+}
+
+#browse .btn-browse {
+  transform: translateY(50%);
+  margin: auto;
+  display: block;
+  width: 19rem;
+  z-index: -1 !important;
+}
+#browse .btn-browse:hover {
+  background-color: var(--color-white);
+  color: var(--color-pink);
+  cursor: pointer;
+}
+/* *---------- end browse part------- */
+/* todo start  */
+
+#featured {
+  background-color: var(--color-black);
+  border-radius: 2rem;
+  margin-top: 5rem;
+}
+
+#featured .wrapper {
+  position: relative;
+  height: 50rem;
+  overflow: hidden;
+}
+
+.wrapper .slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 1s linear;
+}
+
+.featured-content {
+  padding: 3rem;
+}
+
+.featured-content .card-parent {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#featured .card {
+  background: transparent;
+}
+
+#featured .card img {
+  aspect-ratio: 183/310;
+  margin: 0rem auto;
+}
+
+.card-body-text-1 {
+  margin-top: 1rem;
+}
+
+.card-body-text-2 {
+  margin-top: 0rem;
+}
+
+#stream {
+  background-color: var(--color-black);
+  margin-top: 4rem;
+  padding: 3rem;
+  border-radius: 2rem;
+}
+
+#stream .card-parent {
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+#stream .card-parent .card {
+  padding: 2rem;
+  background-color: var(--color-black);
+  border: 1px solid #666666;
+  height: auto !important;
+  
+}
+#stream .card-parent .card i {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  color: var(--color-pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin: 0rem auto;
+  margin-bottom: 1rem;
+}
+
+#stream .card .card-subtitle {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+#stream .card .card-content {
+  font-size: 1.6rem;
+  color: #666666;
+  margin-top: 1rem;
+}
+
+
+#popular_streams{
+  background-color: var(--color-black);
+  margin-top: 4rem;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+
+#popular_streams .card img{
+  width : 90%;
+  height : auto;
+}
+#popular_streams .card-body-text-1 h2{
+  color: var(--color-pink);
+}
+#popular_streams .rating{
+  color: var(--color-pink);
+}
+
+#popular_streams .btn-browse{
+  width: 20rem;
+  transform: translateY(100%);
+  display: block;
+  margin : 0rem auto;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+#popular_streams .btn-browse:hover{
+  background-color: var(--color-white);
+  color: var(--color-pink);
+}
+
+footer{
+  margin: 4rem 0rem;
+  text-align: center;
+  font-size: 1.7rem;
+}

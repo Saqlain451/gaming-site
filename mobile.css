@@ -1,0 +1,86 @@
+.header {
+  padding: 0rem 1rem;
+  background-color: var(--color-dark);
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-dark);
+}
+
+.navbar-link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.navbar-link i {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: var(--color-pink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+  transition: all 3ms linear;
+}
+
+.navbar-link:hover {
+  color: var(--color-pink);
+  font-size: 1.6rem;
+}
+
+.navbar-icons i:last-child {
+  display: none;
+}
+
+/* hero part */
+.dark-container {
+  padding: 2rem;
+}
+
+.hero-contnet {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.hero-contnet .hero-title {
+  font-size: 4rem;
+}
+/* browse part start */
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.card-parent {
+  grid-template-columns: auto !important;
+}
+.card {
+  margin-top: 1rem;
+}
+/*  */
+
+#featured .wrapper {
+  height: 42rem;
+}
+
+.featured-content .card-parent {
+  grid-template-columns: auto;
+}
+
+#stream .card .card-subtitle, #stream .card  .card-content{
+  text-align: center;
+}
